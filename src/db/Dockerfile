@@ -1,6 +1,6 @@
 FROM debian:bookworm
 
-RUN echo "Hello MariaDB"
+RUN apt-get update && apt-get install -y mariadb-server
 
-# CMD [ "executable" ]
+CMD [ "echo", "Hello MariaDB" ]
 
